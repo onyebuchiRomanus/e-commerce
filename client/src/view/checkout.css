@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    
+}
+html {
+    width: 100% !important;
+}
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.delivery {
+    height: 70px !important;
+    width: 87% !important;
+    margin-left: 80px;
+    font-size: 30px;
+    border-left: 13px solid #DC0E00;
+    border-right: none;
+    border-top: none;
+    padding-top: 23px;
+    padding-left: 10px;
+    border-bottom: 1px solid #E9E9EB;
+    margin-bottom: 60px;
+}
+.delivery > span {
+    font-size: 20px;
+    color: #2E266F;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.checkout_Nav76 {
+  padding: 0px 1% 0px 3%;
+  margin-bottom: 60px;
+}
+.bill_span {
+    font-family: "Arial", Helvetica, sans-serif;
+    margin-bottom: 20px !important;
+    color: #DC0E00;
+    font-size: 23px;
+    font-weight: 700;
+}
+.bill_Nav {
+    padding: 20px;
+    padding-right: 5%;
+}
+.pay_Nav {
+    padding: 20px;
+     padding-left: 5% !important;
+}
+.bill_Nav76 {
+    border: 1px solid #E9E9EB; 
+    padding: 20px;
+    padding-top: 30px;
+    height: auto;  
+    padding-left: 20px !important;
+}
+.form_Nav76 {
+    margin-top:40px;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+.form_Nav76 > input {
+     margin-bottom: 30px;
+     margin-top: 20px;
+     border: none;
+     border-bottom: 1px solid #E9E9EB;
+     width: 95%;
+     padding-bottom: 10px;
+}
+.form_Nav76 > input:focus {
+    outline: none;
+}
+.form_Nav76 > select {
+    width: 95%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #E9E9EB;
+}
+.form_Nav76 > select:focus {
+    outline: none;
+}
+.pay_Nav76 {
+    border: 1px solid #E9E9EB;  
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.bill_btn2 {
+    background-color: #DC0E00;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding:10px 30px;height:40px;
+    border-width: 0px;
+}
+.pay_Nav76 > p {
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .form_Nav76 > span {
+        font-size: 90%;
+        font-weight:500;
+    }
+    .bill_span {
+        font-size: 18px;
+        text-align: center;
+        
+    }
+}
+@media only screen and (max-width: 767px) {
+   .pay_Nav76 {
+    border: 1px solid #E9E9EB;  
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: px;
+}
+.bill_Nav {
+    padding: 20px;
+    padding-right: 5%;
+    width: 100% !important;
+}
+.bill_span {
+    text-align: center;
+    
+}
+.allBase {
+border-bottom: none;
+}
+.pay_Nav {
+    padding: 20px;
+     padding-left: 5% !important;
+     width: 100% !important;
+}
+
+.bill_btn {
+    text-align: center;
+    background-color: #DC0E00;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding:2% 15%;
+    cursor: pointer;   
+}
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000000000000; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+}
+.modal-content {
+    position: relative; border-radius:10px;
+    margin: auto;
+    padding: 2px 16px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    /*border: 1px solid #888;*/
+    width: 40%;display:block;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@media only screen and (max-width:767px){
+    .modal-content{width:90%}
+}
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .modal-content{width: 60%;}
+}
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    padding-top: 2px;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;right: -15px;
+    background-color: #dc0e00;
+    width:30px; height: 30px;border-radius: 50%;
+}  .close:hover,
+    .close:focus {
+        color: #dc0e00;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #fff;
+        border:2px solid #dc0e00;
+    }
+.modal-header {
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+    .modal-header h2 {
+        margin-bottom: 5px;
+        margin-top: 10px;
+        color: #dc0e00;
+    }
+.modalInput {
+    width: 60% !important;
+}
+.modalLink {
+    text-decoration: underline;
+}
+    .modalLink:hover {
+        cursor: pointer;
+    }
+    .sh_loader{padding-left: 37%;}
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #dc0e00;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      @media only screen and (max-width: 767px){
+          .loader{
+              width:100px; height:100px;border: 12px solid #f3f3f3;border-top: 12px solid #dc0e00;
+          }
+          .sh_loader{padding-left: 20%;}
+      }
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .redBtn{color:#fff; background-color: #dc0e00;border-width: 0px;border-radius: 5px;font-size: 19px;padding: 10px 30px}
+      .modalInput {width: 80% !important;margin-top:3px;padding-left:10px;outline: none; height:40px;border:1px solid #d9d9d9;border-radius: 5px;}
+      button{cursor:pointer}

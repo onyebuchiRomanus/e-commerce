@@ -1,0 +1,200 @@
+*{box-sizing: border-box;}
+body{padding: 0px !important;margin: 0px !important;}
+[class*="col-"] {float: left !important;}
+.m0odal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000000000000; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+}
+.modal-content {
+    position: relative; border-radius:10px;
+    margin: auto;
+    padding: 2px 16px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    /*border: 1px solid #888;*/
+    width: 40%;display:block;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@media only screen and (max-width:767px){
+    .modal-content{width:90%}
+}
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .modal-content{width: 60%;}
+}
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    padding-top: 2px;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;right: -15px;
+    background-color: #dc0e00;
+    width:30px; height: 30px;border-radius: 50%;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #dc0e00;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #fff;
+        border:2px solid #dc0e00;
+    }
+
+.modal-header {
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+
+    .modal-header h2 {
+        margin-bottom: 5px;
+        margin-top: 10px;
+        color: #dc0e00;
+    }
+
+.modalInput {
+    width: 60% !important;
+}
+
+.modalLink {
+    text-decoration: underline;
+}
+    .modalLink:hover {
+        cursor: pointer;
+    }
+    .sh_loader{padding-left: 37%;}
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #dc0e00;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      @media only screen and (max-width: 767px){
+          .loader{
+              width:100px; height:100px;border: 12px solid #f3f3f3;border-top: 12px solid #dc0e00;
+          }
+          .sh_loader{padding-left: 20%;}
+          }
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+/*End of modal */
+.modal2 {display: none;margin:0px !important;top:0px;position: fixed;z-index: 100000000; padding-left: 20%;
+    width: 100%;height: 100%; overflow: auto; background-color: rgba(0,0,0,0.2) !important;
+}
+.modal-content2 {height: 100%;position: relative;right:0px;background-color: #dc0e00;margin: auto;padding:20px 40px;
+    width: 100%;-webkit-animation-name: animatetop2;-webkit-animation-duration: 0.4s;animation-name: animatetop2;animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop2 {
+    from {right: -300px;opacity: 0}
+    to {right: 0;opacity: 1}
+}
+@keyframes animatetop2 {
+    from {right: -300px;opacity: 0}
+    to {right: 0;opacity: 1}
+}
+.modal-header2 {margin-bottom: 40px;}
+.close2 {text-align: center;color: #fff;border-radius: 50%;width:35px;height: 35px;float: right;font-size: 28px;position: absolute;right:10px;top:15px;padding-top: 2px;}
+.close2:hover,.close:focus {text-decoration: none;cursor: pointer;}
+.modalInput2 {width: 60% !important;}
+.modalLink2 {text-decoration: underline;}
+.modalLink2:hover {cursor: pointer;}
+.modal-body2 > a{display: block;text-decoration: none;border-bottom: 1px solid #fff;color:#fff;margin-bottom: 10px;padding-bottom: 10px;font-size: 18px;}
+
+/*End of your all code*/
+.col-1 {width: 8.33%;}.col-2 {width: 16.66%;}.col-3 {width: 25%;}.col-4 {width: 33.33%;}.col-5 {width: 41.66%;}.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}.col-8 {width: 66.66%;}.col-9 {width: 75%;}.col-10 {width: 83.33%;}.col-11 {width: 91.66%;}.col-12 {width: 100%;}
+@media only screen and (max-width: 700px) {
+    .col-xs-1 {width: 8.33%;}.col-xs-2 {width: 16.66%;}.col-xs-3 {width: 25%;}.col-xs-4 {width: 33.33%;}.col-xs-5 {width: 41.66%;}.col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}.col-xs-8 {width: 66.66%;}.col-xs-9 {width: 75%;}.col-xs-10 {width: 83.33%;}.col-xs-11 {width: 91.66%;}.col-xs-12 {width: 100%;}
+    .cCa{position: absolute;text-align:center;left:65px;padding-top: 2px;background-color: #31a24c;color:#fff;width:20px;height: 20px;border-radius: 10px;}
+}
+@media only screen and (min-width: 701px) and (max-width: 991px) {
+    .col-sm-1 {width: 8.33%;}.col-sm-2 {width: 16.66%;}.col-sm-3 {width: 25%;}.col-sm-4 {width: 33.33%;}.col-sm-5 {width: 41.66%;}.col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}.col-sm-8 {width: 66.66%;}.col-sm-9 {width: 75%;}.col-sm-10 {width: 83.33%;}.col-sm-11 {width: 91.66%;}.col-sm-12 {width: 100%;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .col-md-1 {width: 8.33%;}.col-md-2 {width: 16.66%;}.col-md-3 {width: 25%;}.col-md-4 {width: 33.33%;}.col-md-5 {width: 41.66%;}.col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}.col-md-8 {width: 66.66%;}.col-md-9 {width: 75%;}.col-md-10 {width: 83.33%;}.col-md-11 {width: 91.66%;}.col-md-12 {width: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+    .col-lg-1 {width: 8.33%;}.col-lg-2 {width: 16.66%;}.col-lg-3 {width: 25%;}.col-lg-4 {width: 33.33%;}.col-lg-5 {width: 41.66%;}.col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}.col-lg-8 {width: 66.66%;}.col-lg-9 {width: 75%;}.col-lg-10 {width: 83.33%;}.col-lg-11 {width: 91.66%;}.col-lg-12 {width: 100%;}
+}
+.userTab,.orderTab{width: 100%; text-align: center;}
+.userTab tr:first-child th{color: #707070;padding-bottom: 30px;}
+.orderTab tr:first-child th{color: #707070;padding-bottom: 20px;padding-top: 40px;}
+.userTab tr td,.orderTab tr td{border-bottom: 1px solid #dfe0eb !important;padding:30px 10px}
+.userTab tr th,.orderTab tr th{border-bottom: 1px solid #dfe0eb !important;padding:30px 10px}
+.userTab tr:not(:first-child) > td:nth-child(2){color: #899ad2}
+.userTab tr:not(:first-child) > td:not(:nth-child(2)){color: #707070}
+.orderTab tr:not(:first-child) > td:nth-child(3){color: #899ad2}
+.orderTab tr:not(:first-child) > td:not(:nth-child(3)){color: #707070}
+.orderTab button{width:100px;color:#fff;padding: 10px 5px;border-width: 0px;border-radius: 5px;}
+.orderTab .claim{background-color: #29cc97;}
+.orderTab .pending{background-color: #bb2222;}
+.orderTab .delivering{background-color: #fed700;}
+.orderTab tr:not(:first-child):hover{background-color: #dfe0eb;}
+.orderTab tr, .orderTab td,.orderTab{border-collapse: collapse;cursor: pointer;}
+.redLink{
+    color:#dc0e00; text-decoration: underline;font-weight: bold;
+}
+.icon_add{
+    font-size: 25px;color:#dc0e00;font-weight: bolder;
+    display: inline-block;padding:2px 0px 5px;width:20px;height:25px;
+}
+.icn{float:left;margin-right: 5px;}
+#div_mainOrderDetails span{
+    display: block;margin-bottom: 8px;
+    font-size: 20px;color:#252733
+}
